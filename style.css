@@ -47,11 +47,9 @@
       max-width: 30rem;
       overflow: hidden;
       position: relative;
-      border: solid 1px red;
     }
 
     .testimonial-card {
-      border: solid 1px red;
       text-align: center;
       display: grid;
       grid-template-rows: 1fr 1fr;
