@@ -1,12 +1,10 @@
   const prev = document.querySelector(".prev");
-    const next = document.querySelector(".next");
-    const cards = document.querySelectorAll(".testimonial-card");
-    const content = document.querySelector(".content")
-    let index = 1, idSlider, time = 3000;
+  const next = document.querySelector(".next");
+  const cards = document.querySelectorAll(".testimonial-card");
+  const content = document.querySelector(".content")
+  let index = 1, idSlider, time = 3000;
 
-
-
-    function showCard() {
+  function showCard() {
       cards.forEach(card => {
         card.classList.add("hidden");
       });
@@ -47,13 +45,13 @@
     autoSlider();// start slider
 
     //event key
-    document.onkeydown = () => {
-      if (event.keyCode == "39") {
+    document.onkeydown = (e) => {
+      if (e.code == "ArrowRight") {
         next.focus();
         clearInterval(idSlider);
         nextCard();
       }
-      if (event.keyCode == "37") {
+      if (e.code == "ArrowLeft") {
         prev.focus();
         clearInterval(idSlider);
         prevCard();
