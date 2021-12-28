@@ -54,6 +54,7 @@
       display: grid;
       grid-template-rows: 1fr 1fr;
       justify-content: center;
+      align-items: center;
       background-image: url("images/pattern-bg.svg");
       background-repeat: no-repeat;
       background-position: top center;
@@ -68,7 +69,6 @@
     .testimonialCard-footer {
       margin: 1rem 0;
       padding: 1rem;
-      align-self: flex-start;
       gap: 1rem;
       color: var(--dark-blue);
       background-image: url("images/pattern-quotes.svg");
@@ -184,7 +184,7 @@
       }
     }
 
-    @media (min-width:768px) {
+    @media (min-width:1000px) {
       body {
         background-size: 45rem;
       }
